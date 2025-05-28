@@ -105,6 +105,14 @@
             box-shadow: 0 10px 30px rgba(46, 139, 87, 0.3);
             position: sticky;
             top: 20px;
+            overflow: hidden;
+        }
+        
+        .plant-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
         }
         
         .section {
@@ -306,7 +314,8 @@
             
             <div class="image-section">
                 <div class="plant-image">
-                    <img src="IMG_9017.jpg" alt="Хамедорея изящная" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    <!-- Попробуйте разные варианты пути к изображению -->
+                    <img src="IMG_9017.jpg" alt="Хамедорея изящная" onerror="this.onerror=null; this.src='https://yellowgreen2023.github.io/plant-guide/IMG_9017.jpg';">
                 </div>
             </div>
         </div>
